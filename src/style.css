@@ -36,13 +36,13 @@ body {
 
 .second-div .section-image p {
   color: white;
-  font-size: 50px;
+  font-size: 72px;
   font-weight: 600;
   transform: translateY(-50px);
 }
 
 .second-div .menu {
-  transform: translateY(-100px);
+  transform: translateY(-150px);
 }
 
 .second-div .menu .col article {

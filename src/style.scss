@@ -35,13 +35,13 @@ body{
         height: 550px; 
         p { 
             color: $white-back; 
-            font-size: 50px; 
+            font-size: 72px; 
             font-weight: 600;
             transform: translateY($przesuniecie); 
         }
     }
     .menu {
-        transform: translateY(-100px);
+        transform: translateY(-150px);
             .col {
                 article {
                     img {
