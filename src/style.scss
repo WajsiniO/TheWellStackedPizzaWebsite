@@ -10,28 +10,28 @@ $bradius: 30px;
     .section-image { 
         background-image: url("img/menu-pizza/pizza-back1.png");
         background-size: cover; 
+        background-position: center;
         height: 550px; 
         p { 
             color: $white-back; 
-            font-size: 60px; 
+            font-size: 50px; 
             font-weight: 600;
             transform: translateY($przesuniecie); 
         }
     }
     .menu {
         transform: translateY(-100px);
-        .row {
             .col {
-                img {
-                    border-radius: $bradius;
-                }
                 article {
+                    img {
+                        border-radius: $bradius;
+                    }
                     background-color: $white-back;
                     padding: 20px;
                     border-radius: $bradius;
                     h2 { margin-top: 10px; }
+                    height: 100%;
                 }
             }
-        }
     }
 }
