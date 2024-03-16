@@ -65,3 +65,7 @@
   background-position-y: 10px;
   background-position-x: 200px;
 }
+
+#kontakt {
+  background-image: url("/img/kontakt/kanapka-3.png");
+}
