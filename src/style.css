@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Josefin Slab, 'Source Sans Pro';
+}
+
+.second-div {
+  background-color: black;
+}
+
+.second-div .section-image {
+  background-image: url("img/menu-pizza/pizza-back1.png");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.second-div .section-image p {
+  color: white;
+  font-size: 72px;
+  font-weight: 600;
+  transform: translateY(-50px);
+}
+
+.second-div .menu {
+  transform: translateY(-150px);
+}
+
+.second-div .menu .col article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  height: 100%;
+}
+
+.second-div .menu .col article img {
+  border-radius: 30px;
+}
+
+.second-div .menu .col article h2 {
+  margin-top: 10px;
+}
