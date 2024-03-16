@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Josefin Slab, 'Source Sans Pro'; }
+* { box-sizing: border-box; font-family: Josefin Slab, 'Source Sans Pro'; }
 
 $przesuniecie: -50px;
 $def-back: black;
@@ -29,9 +29,34 @@ $bradius: 30px;
                     background-color: $white-back;
                     padding: 20px;
                     border-radius: $bradius;
+                    font-style: italic;
                     h2 { margin-top: 10px; }
                 }
             }
         }
     }
 }
+
+.fifth-div {
+    div {
+        img {
+            border-radius: $bradius;
+            width: 100%;
+        }
+    }
+    article {
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            border: 1px solid #e73d0c;
+            padding: 15px 20px;
+            color: $def-back;
+            border-radius: $bradius; 
+        }
+    }
+}
+
