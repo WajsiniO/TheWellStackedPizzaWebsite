@@ -39,22 +39,30 @@
   margin-top: 10px;
 }
 
-.fifth-div div img {
+.fifth-div div:first-child {
+  max-width: 560px;
+}
+
+.fifth-div div:first-child img {
   border-radius: 30px;
 }
 
+.fifth-div div:last-child {
+  max-width: 660px;
+}
+
 @media screen and (max-width: 992px) {
-  .fifth-div div article {
+  .fifth-div div:last-child article {
     text-align: center;
   }
 }
 
-.fifth-div div article ul {
+.fifth-div div:last-child article ul {
   list-style-type: none;
   padding-left: 1rem;
 }
 
-.fifth-div div article a {
+.fifth-div div:last-child article a {
   cursor: pointer;
   text-decoration: none;
   border: 1px solid #e73d0c;
