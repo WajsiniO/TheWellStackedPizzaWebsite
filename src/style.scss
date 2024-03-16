@@ -1,67 +1,113 @@
-* { box-sizing: border-box; font-family: Josefin Slab, 'Source Sans Pro'; }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 
-$przesuniecie: -50px;
-$def-back: black;
-$white-back: white;
-$bradius: 30px;
+body{
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
 
-.second-div {
-    background-color: $def-back;
-    .section-image { 
-        background-image: url("img/menu-pizza/pizza-back1.png");
-        background-size: cover; 
-        height: 550px; 
-        p { 
-            color: $white-back; 
-            font-size: 60px; 
-            font-weight: 600;
-            transform: translateY($przesuniecie); 
-        }
+.navigator{
+    display: flex;
+    justify-content: space-between;
+    img:nth-child(1){
+        width: 300px;
+        padding: 15px;
     }
-    .menu {
-        transform: translateY(-100px);
-        .row {
-            .col {
-                img {
-                    border-radius: $bradius;
-                }
-                article {
-                    background-color: $white-back;
-                    padding: 20px;
-                    border-radius: $bradius;
-                    font-style: italic;
-                    h2 { margin-top: 10px; }
-                }
-            }
-        }
+    img:nth-child(2){
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        margin-top: 4.5em;
     }
 }
 
-.fifth-div {
-    div {
-        img {
-            border-radius: $bradius;
-            width: 100%;
-        }
+.panel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h6{
+        font-size: 48px;
+        font-style: italic;
     }
-    article {
-        ul {
-            list-style-type: none;
-            padding-left: 1rem;
-        }
-        a {
-            cursor: pointer;
-            text-decoration: none;
-            border: 1px solid #e73d0c;
-            padding: 15px 20px;
-            color: $def-back;
-            border-radius: $bradius; 
-        }
+    p:nth-child(2){
+        font-size: 56px;
+        font-style: italic;
+        font-weight: bold;
+    }    
+    font-size: 32px;
+    li:nth-child(1){
+        list-style-image: url(/img/welcome/vector-Dpp.png);
     }
-}
-footer {
-    color: $white-back;
-    background-color: #333333;
-    height: 150px;
+    li:nth-child(3){
+        list-style-image: url(/img/welcome/vector-Dpp.png);
+    }
+    li:nth-child(2){
+        list-style-image: url(/img/welcome/vector-qQQ.png);
+    }
+    li:nth-child(4){
+        list-style-image: url(/img/welcome/vector-qQQ.png);
+    }
 }
 
+.lewo {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    flex-direction: column;
+}
+
+.prawo{
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    img{
+        width: 564px;
+        height: 543px;
+        border-radius: 20%;
+        padding: 5px;
+    }
+}
+
+.icons{
+    margin-top: 10em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 60px;
+    }
+    img{
+        width: 100px;
+    }
+    p{
+        text-align: center;
+        font-size: 28px;
+        margin-top: 10px;
+    }
+}
+
+.low{
+    img{
+        margin-bottom: 10px;
+    }   
+}
+
+@media screen and (max-width: 995px) {
+    .panel {
+        flex-direction: column;
+    }
+    .lewo, .prawo {
+        width: 100%;
+        justify-content: center;
+        align-items: center; 
+    }
+}
