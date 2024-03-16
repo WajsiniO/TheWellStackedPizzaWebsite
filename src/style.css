@@ -160,15 +160,20 @@ body {
 
 .fifth-div div img {
   border-radius: 30px;
-  width: 100%;
 }
 
-.fifth-div article ul {
+@media screen and (max-width: 992px) {
+  .fifth-div div article {
+    text-align: center;
+  }
+}
+
+.fifth-div div article ul {
   list-style-type: none;
   padding-left: 1rem;
 }
 
-.fifth-div article a {
+.fifth-div div article a {
   cursor: pointer;
   text-decoration: none;
   border: 1px solid #e73d0c;
