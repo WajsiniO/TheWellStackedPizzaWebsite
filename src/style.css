@@ -10,15 +10,54 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .navigator img:nth-child(1) {
   width: 300px;
   padding: 15px;
 }
+
 .navigator img:nth-child(2) {
   width: 100px;
   height: 100px;
   padding: 20px;
   margin-top: 4.5em;
+}
+
+.second-div {
+  background-color: black;
+}
+
+.second-div .section-image {
+  background-image: url("img/menu-pizza/pizza-back1.png");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.second-div .section-image p {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  transform: translateY(-50px);
+}
+
+.second-div .menu {
+  transform: translateY(-100px);
+}
+
+.second-div .menu .col article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  height: 100%;
+}
+
+.second-div .menu .col article img {
+  border-radius: 30px;
+}
+
+.second-div .menu .col article h2 {
+  margin-top: 10px;
 }
 
 .panel {
@@ -27,24 +66,30 @@ body {
   flex-wrap: wrap;
   font-size: 32px;
 }
+
 .panel h6 {
   font-size: 48px;
   font-style: italic;
 }
+
 .panel p:nth-child(2) {
   font-size: 56px;
   font-style: italic;
   font-weight: bold;
 }
+
 .panel li:nth-child(1) {
   list-style-image: url(/img/welcome/vector-Dpp.png);
 }
+
 .panel li:nth-child(3) {
   list-style-image: url(/img/welcome/vector-Dpp.png);
 }
+
 .panel li:nth-child(2) {
   list-style-image: url(/img/welcome/vector-qQQ.png);
 }
+
 .panel li:nth-child(4) {
   list-style-image: url(/img/welcome/vector-qQQ.png);
 }
@@ -63,6 +108,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
+
 .prawo img {
   width: 564px;
   height: 543px;
@@ -78,6 +124,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .icons div {
   display: flex;
   flex-direction: column;
@@ -85,9 +132,11 @@ body {
   align-items: center;
   margin: 0 60px;
 }
+
 .icons img {
   width: 100px;
 }
+
 .icons p {
   text-align: center;
   font-size: 28px;
@@ -107,4 +156,29 @@ body {
     justify-content: center;
     align-items: center;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.fifth-div div img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.fifth-div article ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.fifth-div article a {
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #e73d0c;
+  padding: 15px 20px;
+  color: black;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  height: 200px;
+}

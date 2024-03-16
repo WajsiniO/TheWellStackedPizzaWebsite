@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 
+$przesuniecie: -50px;
+$def-back: black;
+$white-back: white;
+$bradius: 30px;
+
 body{
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
@@ -140,4 +145,33 @@ body{
         justify-content: center;
         align-items: center; 
     }
+}
+
+.fifth-div {
+    div {
+        img {
+            border-radius: $bradius;
+            width: 100%;
+        }
+    }
+    article {
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            border: 1px solid #e73d0c;
+            padding: 15px 20px;
+            color: $def-back;
+            border-radius: $bradius; 
+        }
+    }
+}
+
+footer {
+    background-color: #333333;
+    color: $white-back;
+    height: 200px;
 }
