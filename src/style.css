@@ -260,8 +260,11 @@ footer {
 }
 
 #kontakt {
-  height: 700px;
+  height: auto;
   background-image: url("/img/kontakt/kanapka-3.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+
 }
 
 #kontakt #adres {
@@ -279,6 +282,7 @@ footer {
   padding-top: 50px;
   vertical-align: top;
   margin-top: 100px;
+  margin-bottom: 10%;
 }
 
 #kontakt h1, #kontakt h2 {
@@ -297,4 +301,26 @@ footer {
 #kontakt img {
   width: 50px;
 
+}
+
+@media screen and (max-width: 1500px) {
+  #kontakt div, #kontakt #adres {
+  
+    display: block;
+    width: 30%;
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-left: 35%;
+  }
+
+  #kontakt #adres{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #kontakt div, #kontakt #adres {
+    width:300px;
+    margin-left: 30%;
+  }
 }
