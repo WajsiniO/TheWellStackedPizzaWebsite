@@ -148,10 +148,14 @@ body{
 }
 
 .fifth-div {
-    div {
+    div:first-child {
+        max-width: 560px;
         img {
             border-radius: $bradius;
         }
+    }
+    div:last-child {
+        max-width: 660px;
         article {
             @media screen and (max-width: 992px) {
                 text-align: center;
