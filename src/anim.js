@@ -48,3 +48,32 @@ window.onload = function() {
         duration: 2000
     });
 }
+
+let animationTriggered = false;
+
+window.addEventListener('scroll', function() {
+    if (!animationTriggered && window.scrollY >= 3300) {
+        animationTriggered = true;
+
+        anime({
+            targets: '.left',
+            translateX: ['-100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+
+        anime({
+            targets: '.right',
+            translateX: ['100%', '0%'],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+
+        anime({
+            targets: '.elem',
+            translateY: ['50%', '-5%'],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    }
+});
