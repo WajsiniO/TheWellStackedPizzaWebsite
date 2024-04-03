@@ -49,11 +49,13 @@ window.onload = function() {
     });
 }
 
-let animationTriggered = false;
+let animationTriggeredOne = false;
+let animationTriggeredTwo = false;
+let animationTriggeredThree = false;
 
 window.addEventListener('scroll', function() {
-    if (!animationTriggered && window.scrollY >= 3300) {
-        animationTriggered = true;
+    if (!animationTriggeredOne && window.scrollY >= 3300) {
+        animationTriggeredOne = true;
 
         anime({
             targets: '.left',
@@ -76,4 +78,48 @@ window.addEventListener('scroll', function() {
             duration: 1000
         });
     }
+    if (!animationTriggeredTwo && window.scrollY >= 5200) {
+        animationTriggeredTwo = true;
+
+        anime({
+            targets: '.wgore',
+            translateY: ['50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    }
+    if (!animationTriggeredThree && window.scrollY >= 1200) {
+        animationTriggeredThree = true;
+
+        anime({
+            targets: '.left',
+            translateX: ['-50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+        anime({
+            targets: '.right',
+            translateX: ['50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+        anime({
+            targets: '.up',
+            translateY: ['50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+        anime({
+            targets: '.down',
+            translateY: ['-50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    }
 });
+
