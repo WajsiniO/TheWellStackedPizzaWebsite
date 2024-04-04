@@ -49,13 +49,11 @@ window.onload = function() {
     });
 }
 
-let animationTriggeredOne = false;
-let animationTriggeredTwo = false;
-let animationTriggeredThree = false;
+let animationTriggered = [false, false, false];
 
 window.addEventListener('scroll', function() {
-    if (!animationTriggeredOne && window.scrollY >= 3300) {
-        animationTriggeredOne = true;
+    if (!animationTriggered[0] && window.scrollY >= 3300) {
+        animationTriggered[0] = true;
 
         anime({
             targets: '.left',
@@ -78,8 +76,8 @@ window.addEventListener('scroll', function() {
             duration: 1000
         });
     }
-    if (!animationTriggeredTwo && window.scrollY >= 5200) {
-        animationTriggeredTwo = true;
+    if (!animationTriggered[1] && window.scrollY >= 5000) {
+        animationTriggered[1] = true;
 
         anime({
             targets: '.wgore',
@@ -89,8 +87,8 @@ window.addEventListener('scroll', function() {
             duration: 1000
         });
     }
-    if (!animationTriggeredThree && window.scrollY >= 1200) {
-        animationTriggeredThree = true;
+    if (!animationTriggered[2] && window.scrollY >= 750) {
+        animationTriggered[2] = true;
 
         anime({
             targets: '.left',
