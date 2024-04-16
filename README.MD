@@ -12,5 +12,5 @@ Projekt na przedmiot _Projektowanie interfejsów graficznych_
 
 ### Osoby zaangażowane w projekt
 * **Filip Witkowski** (36416)
-* **Aleksander Wajs** (36414)
+* **Aleksander Wajs** (36412)
 * **Gabriel Falisiewicz** (36370)
