@@ -87,6 +87,25 @@ window.addEventListener('scroll', function() {
             duration: 1000
         });
     }
+    if(!animationTriggered[3] && window.scrollY >= 2400){
+        animationTriggered[3] = true;
+
+        anime({
+            targets: '.przekaski',
+            translateX: ['-50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+        anime({
+            targets: '.napoje',
+            translateX: ['50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+      
+    }
     if (!animationTriggered[2] && window.scrollY >= 750) {
         animationTriggered[2] = true;
 
@@ -119,8 +138,6 @@ window.addEventListener('scroll', function() {
             duration: 1000
         });
     }
-    if(!animationTriggered[3] && window.scrollY >= 4000){
-        
-    }
+    
 });
 
