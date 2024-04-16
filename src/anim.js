@@ -49,7 +49,7 @@ window.onload = function() {
     });
 }
 
-let animationTriggered = [false, false, false];
+let animationTriggered = [false, false, false, false];
 
 window.addEventListener('scroll', function() {
     if (!animationTriggered[0] && window.scrollY >= 3300) {
@@ -118,6 +118,9 @@ window.addEventListener('scroll', function() {
             easing: 'easeInOutQuad',
             duration: 1000
         });
+    }
+    if(!animationTriggered[3] && window.scrollY >= 4000){
+        
     }
 });
 
