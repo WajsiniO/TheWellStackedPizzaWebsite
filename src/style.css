@@ -200,6 +200,7 @@ footer {
   background-color: #201c1c;
   height: 1000px;
   position: relative;
+  width: 100%;
 }
 
 #menu .title {
@@ -241,14 +242,14 @@ footer {
 }
 
 #menu .leftMenu {
-  float: left;
   width: 50%;
   height: auto;
+  display: inline-block;
 }
 
 #menu .midLine {
   background-color: white;
-  float: left;
+  display: inline-block;
   width: 0.5%;
   height: 550px;
   margin-left: auto;
@@ -257,8 +258,8 @@ footer {
 }
 
 #menu .rightMenu {
-  float: right;
-  width: 49%;
+  display: inline-block;
+  width: 47%;
 }
 
 #menu ul.napoje > li {
@@ -271,6 +272,22 @@ footer {
 
 #menu ul.napoje > li, #menu .lista2 {
   padding-right: 40px;
+}
+
+@media screen and (max-width: 850px) {
+  #menu .leftMenu, #menu .midLine, #menu .rightMenu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #menu .midLine {
+    height: 2px;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  #menu {
+    height: 1800px;
+  }
 }
 
 #kontakt {
