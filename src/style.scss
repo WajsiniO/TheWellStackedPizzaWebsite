@@ -4,6 +4,7 @@ $przesuniecie: -50px;
 $def-back: black;
 $white-back: white;
 $bradius: 30px;
+$coloraccent: #e73d0c;
 
 body{
     font-family: "Josefin Slab", serif;
@@ -167,7 +168,7 @@ body{
             a {
                 cursor: pointer;
                 text-decoration: none;
-                border: 1px solid #e73d0c;
+                border: 1px solid $coloraccent;
                 padding: 15px 20px;
                 color: $def-back;
                 border-radius: $bradius; 
@@ -191,7 +192,7 @@ footer {
   }
   
   #menu .title {
-    color: #e73d0c;
+    color: $coloraccent;
     text-align: center;
     font-size: 70px;
   }
@@ -415,7 +416,7 @@ footer {
         width: 100%;
     }
     .menu_PB{
-        background-color: #e73d0c;
+        background-color: $coloraccent;
     }
 }
 
@@ -437,7 +438,7 @@ footer {
     position: relative;
     display: flex;
     flex-direction: row;
-    background-color: #e73d0c;
+    background-color: $coloraccent;
     padding: 50px 0 100px 0;
 }
 
@@ -530,4 +531,19 @@ footer {
             margin-left: 50px;
         }
     }
+}
+.pullup {
+    $square: 50px;
+    $position: 20px;
+    position: fixed;
+    bottom: $position;
+    right: $position;
+    width: $square;
+    height: $square;
+    border-radius: 100%;
+    background-color: #e73d0c;
+    cursor: pointer;
+}
+.pullup.bhide {
+    display: none!important;
 }

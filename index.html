@@ -8,10 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab%3A100%2C300%2C400%2C600%2C700"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A100%2C300%2C400%2C600%2C700"/>
-
     <link rel="stylesheet" href="./src/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="src/anim.js"></script>
 </head>
 <body>
     <!-- Witamy w The Well Stacked Pizza -->
@@ -113,54 +111,40 @@
 
         <div class="title Main">Menu</div>
         <section class="leftMenu">
-
         <div class="title">Przekaski</div>
         <ul class="przekaski">
             <li>Frytki</li>
             <p class="lista1">W zestawie z cola <br>
             9,55 $</p>
-
             <li>Surówki</li>
             <p class="lista1">Zestaw 3 rodzinnych surówek <br>
             8,99 $</p>
-            
             <li>Kanapka</li>
             <p class="lista1">Klasyczna firmowa kanapka <br>
             4,99 $</p>
-            
             <li>Hot-Dog</li>
             <p class="lista1"> Paruwa z bułkom <br>
             5,45 $</p>
-
         </ul>
-
         </section>
-
         <div class="midLine"></div>
-
         <section class="rightMenu">
-
             <div class="title">Napoje</div>
-
             <ul dir="rtl" class="napoje">
             <li>Fanta</li>
             <p class="lista2"> W szklance z lodem <br>
             5,49 $</p>
-
             <li>Coca Cola</li>
             <p class="lista2"> W szklance z lodem <br>
             6,39 $</p>
-            
             <li>Coca Cola</li>
             <p class="lista2"> Z dodatkową limonką <br>
             7,49 $</p>
-            
             <li>Lemoniada</li>
             <p class="lista2"> 5l w dzbanku <br>
             6,59 $</p>
             </ul>
         </section>
-
     </div>
     <!-- Pizza, Burger -->
     <div>
@@ -256,32 +240,22 @@
     </div>
     <!-- Adres, godziny, kontakt -->
     <div id="kontakt">
-
         <div id="adres" class="wgore">
-            
             <h1> Adres </h1>
-
             <h2>
                 ul. Solskiego<br> Ludwika<br> 100
             </h2>
-            
             <img src="src/img/kontakt/navigation.png" alt="">
-
         </div>
-        
         <div id="godziny" class="wgore">
-            
             <h1> Godziny </h1>
-
             <h2>
                 <p>Pon - Pn:</br>
                 8:00 - 18:00</br>
                 Sob - Ndz:</br>
                 10:00 - 18:00</p>
             </h2>
-            
         </div>
-        
         <div id="telefon wgore" class="wgore">
             <h1>
                 Zadzwon
@@ -292,12 +266,21 @@
                 <img src="src/img/kontakt/telefon.png" alt="">
             </h2>
         </div>
-
     </div>
     <!-- stopka -->
     <footer class="d-flex justify-content-center align-items-center fs-1">
         Akademia Tarnowska
     </footer>
+    <div class="pullup d-flex justify-content-center align-items-center bhide">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32" fill="white">
+            <path d="M28.768 17.344q0 0.896-0.672 1.6l-1.312 1.344q-0.704 0.672-1.632 0.672-0.96 0-1.6-0.672l-5.28-5.248v12.576q0 0.928-0.64 1.504t-1.632 0.608h-2.272q-0.96 0-1.632-0.608t-0.672-1.504v-12.576l-5.248 5.248q-0.64 0.672-1.6 0.672t-1.6-0.672l-1.344-1.344q-0.672-0.672-0.672-1.6 0-0.96 0.672-1.632l11.616-11.616q0.64-0.672 1.6-0.672t1.632 0.672l11.616 11.616q0.672 0.704 0.672 1.632z"></path>
+        </svg>
+    </div>
 </body>
-<script src="src/script.js"></script>
+<script src="src/anim.js"></script>
+<script>
+    document.querySelector(".pullup").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
 </html>

@@ -49,7 +49,8 @@ window.onload = function() {
     });
 }
 
-let animationTriggered = [false, false, false, false];
+let animationTriggered = [false, false, false, false, false];
+let pullUpButton = document.querySelector('.pullup');
 
 window.addEventListener('scroll', function() {
     if (!animationTriggered[0] && window.scrollY >= 3300) {
@@ -89,7 +90,6 @@ window.addEventListener('scroll', function() {
     }
     if(!animationTriggered[3] && window.scrollY >= 2400){
         animationTriggered[3] = true;
-
         anime({
             targets: '.przekaski',
             translateX: ['-50%', '0%'],
@@ -108,7 +108,7 @@ window.addEventListener('scroll', function() {
     }
     if (!animationTriggered[2] && window.scrollY >= 750) {
         animationTriggered[2] = true;
-
+        
         anime({
             targets: '.left',
             translateX: ['-50%', '0%'],
@@ -138,6 +138,27 @@ window.addEventListener('scroll', function() {
             duration: 1000
         });
     }
-    
+    if(!animationTriggered[4] && window.scrollY >= 750) { 
+        animationTriggered[4] = true;
+        anime({
+            targets: '.pullup',
+            translateY: ['-50%', '0%'],
+            opacity: [0, 1],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+        pullUpButton.classList.remove("bhide");
+    }
+    if(animationTriggered[4] && window.scrollY <= 750) {
+        animationTriggered[4] = false;
+        anime({
+            targets: '.pullup',
+            translateY: ['0%', '-50%'],
+            opacity: [1, 0],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+        setTimeout(1000,function() { pullUpButton.classList.add("bhide") });
+    }
 });
 
