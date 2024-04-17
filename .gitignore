@@ -1,4 +1,4 @@
-style.min.css
-style.css.map
-style.css
+src/style.min.css
+src/style.css.map
+src/style.css
 *.tmp
