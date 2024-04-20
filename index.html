@@ -12,11 +12,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
+    <!-- Burger menu -->
+    <ul class="burger_menu">
+        <li><a href="#sec01">Witamy</a></li>
+        <li><a href="#sec02">Dania</a></li>
+        <li><a href="#sec03">Menu</a></li>
+        <li><a href="#sec04">Pizza</a></li>
+        <li><a href="#sec05">Historia</a></li>
+        <li><a href="#sec06">Kontakt</a></li>
+    </ul>
     <!-- Witamy w The Well Stacked Pizza -->
     <div>
-        <div class="navigator">
+        <div id="sec01" class="navigator">
             <img src="./src/img/welcome/image-1.png" alt="logo">
-            <img src="./src/img/welcome/vector-fbr.png" alt="icon">
+            <img class="BM" src="./src/img/welcome/vector-fbr.png" alt="icon">
         </div>
         <div class="panel">
             <div class="lewo">
@@ -57,7 +66,7 @@
     </div>
 
     <!-- Włoskie Menu Pizza -->
-    <div id="menutop" class="second-div">
+    <div id="sec02" id="menutop" class="second-div">
         <div class="section-image d-flex justify-content-center align-items-center">
             <p class="text-center">Włoskie Menu Pizza</p>
         </div>
@@ -108,8 +117,7 @@
     </div>
     <!-- Menu -->
     <div id="menu">
-
-        <div class="title Main">Menu</div>
+        <div id="sec03" class="title Main">Menu</div>
         <section class="leftMenu">
         <div class="title">Przekaski</div>
         <ul class="przekaski">
@@ -147,7 +155,7 @@
         </section>
     </div>
     <!-- Pizza, Burger -->
-    <div>
+    <div id="sec04">
         <div class="background_PB">
             <img src="src/img/pizza_burger/background.png" alt="pizza">
             <div class="menu_PB">
@@ -221,7 +229,7 @@
         </div>
     </div>
     <!-- Nasza Historia -->
-    <div class="fifth-div d-flex justify-content-center align-items-center flex-column flex-lg-row p-4 row row-cols-lg-2">
+    <div id="sec05" class="historia fifth-div d-flex justify-content-center align-items-center flex-column flex-lg-row p-4 row row-cols-lg-2">
         <div>
             <img class="d-block img-fluid mx-auto" src="src/img/our-history/nice-pizza.png" alt="nice-pizza" />
         </div>
@@ -241,7 +249,7 @@
     <!-- Adres, godziny, kontakt -->
     <div id="kontakt">
         <div id="adres" class="wgore">
-            <h1> Adres </h1>
+            <h1 id="sec06"> Adres </h1>
             <h2>
                 ul. Solskiego<br> Ludwika<br> 100
             </h2>
@@ -283,4 +291,16 @@
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 </script>
+
+<script>
+    const elem = document.querySelector(".burger_menu");
+    document.querySelector(".BM").addEventListener("click", function(){
+        elem.classList.add('show_menu');
+    })
+    document.querySelector("body").addEventListener("dblclick", function(){
+        elem.classList.remove('show_menu');
+    })
+    
+</script>
+
 </html>
